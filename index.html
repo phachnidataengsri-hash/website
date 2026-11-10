@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PET PARTY 🐾</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #eee3ff);
+    color: #49336d;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px 35px;
+    background: linear-gradient(135deg, #ed91bd, #a985e8);
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0 0 12px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    border: 2px solid #d58cbd;
+    background: white;
+    color: #a34d91;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #d46cae;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #d8b9d9;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #c49acb;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 17px;
+}
+
+.card-info h3 {
+    margin: 0 0 8px;
+}
+
+.card-info p {
+    color: #9874c7;
+    margin: 0;
+}
+
+.category {
+    display: inline-block;
+    background: #fce4f3;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card.hide {
+    display: none;
+}
+
+.about {
+    background: white;
+    margin-top: 35px;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #a34d91;
+}
+
+@media (max-width: 750px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐾 PET PARTY 🐶</h1>
+    <p>โลกแห่งสัตว์เลี้ยง ค้นหาเพื่อนตัวโปรดที่ใช่สำหรับคุณ 💗</p>
+</header>
+
+<div class="container">
+
+    <div class="filters">
+        <button class="filter-btn active" onclick="filterPet('all', this)">ทั้งหมด</button>
+        <button class="filter-btn" onclick="filterPet('dog', this)">🐶 สุนัข</button>
+        <button class="filter-btn" onclick="filterPet('cat', this)">🐱 แมว</button>
+        <button class="filter-btn" onclick="filterPet('small', this)">🐹 สัตว์ตัวเล็ก</button>
+        <button class="filter-btn" onclick="filterPet('bird', this)">🐦 นก</button>
+    </div>
+
+    <div class="gallery">
+
+        <div class="card" data-category="dog">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600" alt="โกลเด้นรีทรีฟเวอร์">
+            <div class="card-info">
+                <span class="category">🐶 สุนัข</span>
+                <h3>โกลเด้นรีทรีฟเวอร์</h3>
+                <p>เป็นมิตร ร่าเริง และฉลาด</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="dog">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600" alt="ชิวาวา">
+            <div class="card-info">
+                <span class="category">🐶 สุนัข</span>
+                <h3>ชิวาวา</h3>
+                <p>ตัวเล็ก ขี้เล่น และรักเจ้าของ</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="cat">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600" alt="แมว">
+            <div class="card-info">
+                <span class="category">🐱 แมว</span>
+                <h3>แมวเปอร์เซีย</h3>
+                <p>ขนฟู น่ารัก และชอบความสงบ</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="cat">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600" alt="แมวส้ม">
+            <div class="card-info">
+                <span class="category">🐱 แมว</span>
+                <h3>แมวบ้าน</h3>
+                <p>ขี้อ้อน ขี้เล่น และเลี้ยงง่าย</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="small">
+            <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600" alt="หนูแฮมสเตอร์">
+            <div class="card-info">
+                <span class="category">🐹 สัตว์ตัวเล็ก</span>
+                <h3>แฮมสเตอร์</h3>
+                <p>ตัวจิ๋ว น่ารัก และชอบวิ่งเล่น</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="small">
+            <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=600" alt="กระต่าย">
+            <div class="card-info">
+                <span class="category">🐰 สัตว์ตัวเล็ก</span>
+                <h3>กระต่าย</h3>
+                <p>ขนนุ่ม อ่อนโยน และน่าทะนุถนอม</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="bird">
+            <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=600" alt="นกแก้ว">
+            <div class="card-info">
+                <span class="category">🐦 นก</span>
+                <h3>นกแก้ว</h3>
+                <p>สีสันสวยงาม ฉลาด และช่างพูด</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="bird">
+            <img src="https://images.unsplash.com/photo-1522858547137-f1dcec554f55?w=600" alt="นก">
+            <div class="card-info">
+                <span class="category">🐦 นก</span>
+                <h3>นกหงส์หยก</h3>
+                <p>ตัวเล็ก สีสวย และร่าเริง</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about">
+        <h2>💗 เกี่ยวกับ PET PARTY</h2>
+        <p>
+            เว็บไซต์แนะนำสัตว์เลี้ยงสำหรับคนรักสัตว์
+            ช่วยให้คุณรู้จักสัตว์เลี้ยงแต่ละชนิด
+            และเลือกเพื่อนตัวน้อยที่เหมาะกับไลฟ์สไตล์ของคุณ
+        </p>
+        <p>อย่าลืมดูแล ให้อาหาร และพาสัตว์เลี้ยงไปตรวจสุขภาพอย่างเหมาะสม</p>
+    </div>
+
+</div>
+
+<footer>
+    🐾 Made with love | PET PARTY 💗
+</footer>
+
+<script>
+function filterPet(category, button) {
+
+    const cards = document.querySelectorAll('.card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    cards.forEach(card => {
+
+        if (category === 'all' ||
+            card.dataset.category === category) {
+
+            card.classList.remove('hide');
+
+        } else {
+
+            card.classList.add('hide');
+
+        }
+
+    });
+}
+</script>
+
+</body>
+</html>
