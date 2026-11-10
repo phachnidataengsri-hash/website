@@ -177,4 +177,268 @@ footer {
         <button class="filter-btn" onclick="filterPet('dog', this)">🐶 สุนัข</button>
         <button class="filter-btn" onclick="filterPet('cat', this)">🐱 แมว</button>
         <button class="filter-btn" onclick="filterPet('small', this)">🐹 สัตว์ตัวเล็ก</button>
-        <button class="filter-btn" onclick="filterPet('bird', this)">🐦 นก</button
+        <button class="filter-btn" onclick="filterPet('bird', this)">🐦 นก</button>
+        <button class="filter-btn" onclick="filterPet('exotic', this)">🐠 สัตว์น้ำ & แปลกใหม่</button>
+    </div>
+
+    <div class="gallery">
+
+        <!-- สุนัข -->
+        <div class="card" data-category="dog">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600" alt="โกลเด้นรีทรีฟเวอร์">
+            <div class="card-info">
+                <span class="category">🐶 สุนัข</span>
+                <h3>โกลเด้นรีทรีฟเวอร์</h3>
+                <p>เป็นมิตร ร่าเริง และฉลาดแสนรู้</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="dog">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=600" alt="ชิวาวา">
+            <div class="card-info">
+                <span class="category">🐶 สุนัข</span>
+                <h3>ชิวาวา</h3>
+                <p>ตัวเล็ก ขี้เล่น และรักเจ้าของมาก</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="dog">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=600" alt="บีเกิล">
+            <div class="card-info">
+                <span class="category">🐶 สุนัข</span>
+                <h3>บีเกิล</h3>
+                <p>จมูกดี แอคทีฟ อารมณ์ดีตลอดเวลา</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="dog">
+            <img src="https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=600" alt="คอร์กี้">
+            <div class="card-info">
+                <span class="category">🐶 สุนัข</span>
+                <h3>เวลช์ คอร์กี้</h3>
+                <p>ขาสั้น ขี้อ้อน และตูดดุ๊กดิ๊กน่ารัก</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="dog">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600" alt="ไซบีเรียน ฮัสกี">
+            <div class="card-info">
+                <span class="category">🐶 สุนัข</span>
+                <h3>ไซบีเรียน ฮัสกี</h3>
+                <p>เท่ มีเอกลักษณ์ ไฮเปอร์และพูดเก่ง</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="dog">
+            <img src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab2?w=600" alt="ปอมเมอเรเนียน">
+            <div class="card-info">
+                <span class="category">🐶 สุนัข</span>
+                <h3>ปอมเมอเรเนียน</h3>
+                <p>ขนฟูเหมือนก้อนตัวจิ๋ว ตื่นตัวเสมอ</p>
+            </div>
+        </div>
+
+        <!-- แมว -->
+        <div class="card" data-category="cat">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600" alt="แมวเปอร์เซีย">
+            <div class="card-info">
+                <span class="category">🐱 แมว</span>
+                <h3>แมวเปอร์เซีย</h3>
+                <p>ขนฟู สง่างาม และชอบความสงบ</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="cat">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600" alt="แมวส้ม">
+            <div class="card-info">
+                <span class="category">🐱 แมว</span>
+                <h3>แมวส้ม (แมวบ้าน)</h3>
+                <p>ขี้อ้อน กินเก่ง ขี้เล่น เลี้ยงง่าย</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="cat">
+            <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=600" alt="แมวสก็อตติช โฟลด์">
+            <div class="card-info">
+                <span class="category">🐱 แมว</span>
+                <h3>สก็อตติช โฟลด์</h3>
+                <p>หูพับ หน้ากลม น่ารักน่าเอ็นดู</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="cat">
+            <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=600" alt="แมววิเชียรมาศ">
+            <div class="card-info">
+                <span class="category">🐱 แมว</span>
+                <h3>วิเชียรมาศ</h3>
+                <p>แมวไทยโบราณ แต้มสีสวย ฉลาดช่างคุย</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="cat">
+            <img src="https://images.unsplash.com/photo-1583795128727-6ec3642408f8?w=600" alt="บริติช ช็อตแฮร์">
+            <div class="card-info">
+                <span class="category">🐱 แมว</span>
+                <h3>บริติช ช็อตแฮร์</h3>
+                <p>ตัวแน่น ขนนุ่มเหมือนตุ๊กตาหมี</p>
+            </div>
+        </div>
+
+        <!-- สัตว์ตัวเล็ก -->
+        <div class="card" data-category="small">
+            <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600" alt="หนูแฮมสเตอร์">
+            <div class="card-info">
+                <span class="category">🐹 สัตว์ตัวเล็ก</span>
+                <h3>แฮมสเตอร์</h3>
+                <p>ตัวจิ๋ว แก้มป่อง น่ารัก ชอบวิ่งจักร</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="small">
+            <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=600" alt="กระต่าย">
+            <div class="card-info">
+                <span class="category">🐰 สัตว์ตัวเล็ก</span>
+                <h3>กระต่าย</h3>
+                <p>ขนนุ่ม อ่อนโยน น่าทะนุถนอม</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="small">
+            <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=600" alt="แกสบี้">
+            <div class="card-info">
+                <span class="category">🐹 สัตว์ตัวเล็ก</span>
+                <h3>แกสบี้ (กีนีพิก)</h3>
+                <p>ส่งเสียงร้องน่ารัก ชอบกินผักสด</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="small">
+            <img src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=600" alt="ชินชิล่า">
+            <div class="card-info">
+                <span class="category">🐭 สัตว์ตัวเล็ก</span>
+                <h3>ชินชิล่า</h3>
+                <p>ขนแน่นนุ่มที่สุดในโลก เงียบสงบ</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="small">
+            <img src="https://images.unsplash.com/photo-1507666405895-422eca7d517f?w=600" alt="กระรอก">
+            <div class="card-info">
+                <span class="category">🐿️ สัตว์ตัวเล็ก</span>
+                <h3>กระรอก</h3>
+                <p>คล่องแคล่ว ว่องไว หางฟูน่ารัก</p>
+            </div>
+        </div>
+
+        <!-- นก -->
+        <div class="card" data-category="bird">
+            <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=600" alt="นกแก้ว">
+            <div class="card-info">
+                <span class="category">🐦 นก</span>
+                <h3>นกแก้วมาคอว์</h3>
+                <p>สีสันฉูดฉาด ฉลาด และช่างพูด</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="bird">
+            <img src="https://images.unsplash.com/photo-1522858547137-f1dcec554f55?w=600" alt="นกหงส์หยก">
+            <div class="card-info">
+                <span class="category">🐦 นก</span>
+                <h3>นกหงส์หยก</h3>
+                <p>ตัวเล็ก สีสดใส ร่าเริงตลอดวัน</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="bird">
+            <img src="https://images.unsplash.com/photo-1620694563891-b1e2576b5357?w=600" alt="นกค็อกคาเทล">
+            <div class="card-info">
+                <span class="category">🐦 นก</span>
+                <h3>นกค็อกคาเทล</h3>
+                <p>มีหงอนบนหัว แก้มส้ม ร้องเพลงเก่ง</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="bird">
+            <img src="https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?w=600" alt="นกเลิฟเบิร์ด">
+            <div class="card-info">
+                <span class="category">🐦 นก</span>
+                <h3>นกเลิฟเบิร์ด</h3>
+                <p>นกแห่งความรัก ชอบอยู่เป็นคู่</p>
+            </div>
+        </div>
+
+        <!-- สัตว์น้ำ & สัตว์แปลก -->
+        <div class="card" data-category="exotic">
+            <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00?w=600" alt="ปลาทอง">
+            <div class="card-info">
+                <span class="category">🐠 สัตว์น้ำ</span>
+                <h3>ปลาทอง</h3>
+                <p>สีส้มสดใส ว่ายน้ำเพลิน ตาฮีลใจ</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="exotic">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600" alt="เต่าบก">
+            <div class="card-info">
+                <span class="category">🐢 สัตว์เลื้อยคลาน</span>
+                <h3>เต่าบก (ซูลคาต้า)</h3>
+                <p>เชื่อง ช้าๆ ได้พร้าเล่มงาม อายุยืน</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="exotic">
+            <img src="https://images.unsplash.com/photo-1563409236302-8442b5e644df?w=600" alt="ปลาการ์ตูน">
+            <div class="card-info">
+                <span class="category">🐠 สัตว์น้ำ</span>
+                <h3>ปลาการ์ตูน (นีโม)</h3>
+                <p>สีสันสดใส มีเสน่ห์เฉพาะตัว</p>
+            </div>
+        </div>
+
+        <div class="card" data-category="exotic">
+            <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef9?w=600" alt="กิ้งก่าเบียร์ดดราก้อน">
+            <div class="card-info">
+                <span class="category">🦎 สัตว์แปลก</span>
+                <h3>เบียร์ดดราก้อน</h3>
+                <p>กิ้งก่าอารมณ์ดี เชื่อง จับเล่นได้ง่าย</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about">
+        <h2>💗 เกี่ยวกับ PET PARTY</h2>
+        <p>
+            เว็บไซต์แนะนำสัตว์เลี้ยงสำหรับคนรักสัตว์
+            ช่วยให้คุณรู้จักสัตว์เลี้ยงแต่ละชนิด
+            และเลือกเพื่อนตัวน้อยที่เหมาะกับไลฟ์สไตล์ของคุณ
+        </p>
+        <p>อย่าลืมดูแล ให้อาหาร และพาสัตว์เลี้ยงไปตรวจสุขภาพอย่างเหมาะสม</p>
+    </div>
+
+</div>
+
+<footer>
+    🐾 Made with love | PET PARTY 💗
+</footer>
+
+<script>
+function filterPet(category, button) {
+    const cards = document.querySelectorAll('.card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+            card.classList.remove('hide');
+        } else {
+            card.classList.add('hide');
+        }
+    });
+}
+</script>
+
+</body>
+</html>
